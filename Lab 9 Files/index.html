@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>FIT1050 Web Fundamentals - Week 9</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/
+dist/fancybox/fancybox.css" />    
+    
+  </head>
+
+  <body>
+    
+    <h1>FIT1050 Web Fundamentals</h1>
+    <h2>Week 9 - JavaScript and jQuery</h2>
+    
+    <p id="filters">
+      Filter:
+      <button data-filter="img">All</button>
+      <button data-filter=".book">Books</button>
+      <button data-filter=".tv">TV</button>
+      <button data-filter=".movie">Movies</button>
+      <button data-filter=".game">Games</button>
+      <button data-filter=".new">New Products</button>
+    </p>
+    
+    <p id="products">
+      <!-- images sourced from: www.bigw.com.au -->
+      
+      <a href="images/large/aclashofkings.jpg" data-fancybox="gallery" data-caption="A Clash of Kings by Geroge R.R. Martin">
+        <img src="images/small/aclashofkings.jpg" alt="" class="book" />
+      </a>
+
+      <a href="images/large/blazingsaddles.jpg" data-fancybox="gallery">
+        <img src="images/small/blazingsaddles.jpg" class="movie" alt="" class="movie" />
+      </a>
+      
+      <a href="images/large/bones.jpg" data-fancybox="gallery">
+        <img src="images/small/bones.jpg" alt="" class="tv" />
+      </a>
+      
+      <a href="images/large/captainamerica.jpg" data-fancybox="gallery">
+        <img src="images/small/captainamerica.jpg" alt="" class="movie" />
+      </a>
+      
+      <a href="images/large/chappie.jpg" data-fancybox="gallery">
+        <img src="images/small/chappie.jpg" alt="" class="movie" />
+      </a>
+      
+      <a href="images/large/criminalminds.jpg" data-fancybox="gallery">
+        <img src="images/small/criminalminds.jpg" alt="" class="tv" />
+      </a>
+      
+      <a href="images/large/doctorwho.jpg" data-fancybox="gallery">
+        <img src="images/small/doctorwho.jpg" alt="" class="tv" />
+      </a>
+      
+      <a href="images/large/fifa16.jpg" data-fancybox="gallery">
+        <img src="images/small/fifa16.jpg" alt="" class="game" />
+      </a>
+      
+      <a href="images/large/fullhouse.jpg" data-fancybox="gallery">
+        <img src="images/small/fullhouse.jpg" alt="" class="tv" />
+      </a>
+      
+      <a href="images/large/gameofthrones.jpg" data-fancybox="gallery">
+        <img src="images/small/gameofthrones.jpg" alt="" class="tv" />
+      </a>
+      
+      <a href="images/large/goldenlion.jpg" data-fancybox="gallery">
+        <img src="images/small/goldenlion.jpg" alt="" class="book" />
+      </a>
+      
+      <a href="images/large/gosetawatchman.jpg" data-fancybox="gallery">
+        <img src="images/small/gosetawatchman.jpg" alt="" class="book" />
+      </a>
+      
+      <a href="images/large/gtav.jpg" data-fancybox="gallery">
+        <img src="images/small/gtav.jpg" alt="" class="game" />
+      </a>
+      
+      <a href="images/large/halo5.jpg" data-fancybox="gallery">
+        <img src="images/small/halo5.jpg" alt="" class="game" />
+      </a>
+      
+      <a href="images/large/makeme.jpg" data-fancybox="gallery">
+        <img src="images/small/makeme.jpg" alt="" class="book" />
+      </a>
+      
+      <a href="images/large/monstersinc.jpg" data-fancybox="gallery">
+        <img src="images/small/monstersinc.jpg" alt="" class="movie" />
+      </a>
+      
+      <a href="images/large/nba2k16.jpg" data-fancybox="gallery">
+        <img src="images/small/nba2k16.jpg" alt="" class="game" />
+      </a>
+      
+      <a href="images/large/plentymore.jpg" data-fancybox="gallery">
+        <img src="images/small/plentymore.jpg" alt="" class="book" />
+      </a>
+      
+      <a href="images/large/pulpfiction.jpg" data-fancybox="gallery">
+        <img src="images/small/pulpfiction.jpg" alt="" class="movie" />
+      </a>
+      
+      <a href="images/large/sims4.jpg" data-fancybox="gallery">
+        <img src="images/small/sims4.jpg" alt="" class="game" />
+      </a>
+
+      <a href="images/large/sims4.jpg" data-fancybox="gallery">
+        <img src="images/small/sims4.jpg" alt="" class="new" />
+      </a>
+
+      <a href="images/large/sims4.jpg" data-fancybox="gallery">
+        <img src="images/small/sims4.jpg" alt="" class="new" />
+      </a>
+
+      <a href="images/large/sims4.jpg" data-fancybox="gallery">
+        <img src="images/small/sims4.jpg" alt="" class="new" />
+      </a>
+
+      <a href="images/large/sims4.jpg" data-fancybox="gallery">
+        <img src="images/small/sims4.jpg" alt="" class="new" />
+      </a>
+
+      <a href="images/large/sims4.jpg" data-fancybox="gallery">
+        <img src="images/small/sims4.jpg" alt="" class="new" />
+      </a>
+      
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/
+fancybox.umd.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+  
+</html>

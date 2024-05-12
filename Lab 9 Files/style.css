@@ -1,0 +1,12 @@
+body { font-family:Arial, sans-serif; }
+
+#products a {
+  text-decoration: none;
+}
+
+#products img {
+  vertical-align:middle;
+  margin-bottom:50px;
+  width:175px;
+  height:175px;
+}

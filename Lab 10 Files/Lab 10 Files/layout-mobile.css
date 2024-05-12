@@ -1,0 +1,87 @@
+/* basic site styles */
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Segoe UI, Trebuchet MS, sans-serif;
+}
+
+a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+main a {
+	color: #d31400;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.thumbnail {
+	float: left;
+	margin: 0 15px 5px 0;
+}
+
+
+/* mobile layout styles */
+header {
+	color: #ffc3a5;
+	background: url(images/header.png);
+	margin-top: 70px;
+	padding: 0 20px;
+}
+
+article {
+	color: #333;
+	background: #ffffff;
+	padding: 0 20px;
+}
+
+aside {
+	color: #666;
+	background: #eeeeee;
+	padding: 0 20px;
+}
+
+nav {
+	color: #ddd;
+	background: #333333;
+	position: absolute;
+ 	top: 0;
+ 	width: 100%;
+	padding: 0 20px;
+}
+
+footer {
+	color: #666;
+	background: #ddd;
+	padding: 0 20px;
+}
+
+header, nav, main, footer {
+	display: flex;
+	flex-direction: column;
+}
+
+/* basic styling to navigation menu */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: none;
+}
+
+nav a {
+	color: #ddd;
+	display: block;
+	padding: 20px;
+}
+
+/* image content */
+main img {
+	max-width: 100%;
+}
