@@ -1,0 +1,89 @@
+html {
+	background-color: #d3dbde;
+	background-image: url('data:image/jpeg;base64,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');
+	background-size: 600px 900px;
+}
+
+body {
+	background-color:#ffffff;
+	color: #333333;
+	font-family: Segoe UI, Arial, sans-serif;
+	width:1000px;
+	border: 20px solid #ffffff;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header {
+	background-color: #004499;
+	color: #ffffff;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 20px 20px 20px gray;
+	background-image: linear-gradient(red, yellow);
+}
+
+header h1, header h2 {
+	margin: 0;
+	font-family: "Jacquard 24", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 70px;
+}
+
+nav {
+	background:#333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+}
+
+nav a {
+	font-weight: bold;
+	color:#ffffff;
+}
+
+main {
+	background-color: #ffffff;
+	display: flex;
+	box-shadow: 20px 20px 10px purple;
+
+}
+
+footer {
+	background-color: #3d4348;
+	color: #ffffff;
+	padding: 20px;
+}
+
+footer a {
+	color:#99ddff;
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+aside {
+	background-color: #dddddd;
+	padding: 20px;
+	width: 300px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;	  
+	font-size: 40px;
+}
+
+article {
+	padding: 20px;
+}
