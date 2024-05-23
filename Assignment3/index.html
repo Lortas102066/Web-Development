@@ -5,9 +5,513 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Assignment 3</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
-    <script src="script.js"></script>   
+        <header id="cs-navigation">
+            <div class="cs-top-bar">
+                <div class="cs-top-container">
+                    <div class="cs-top-contact">
+                        <a href="" class="cs-top-link">
+                            <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                            Call us: 03 9069 3148
+                        </a>
+                        <a href="" class="cs-top-link">
+                            <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
+                            Opening hours: Mon - Sat: 11:00 To 20:00 &emsp; Sun: 16:00 To 20:30
+                        </a>
+                    </div>
+                    <div class="cs-top-social">
+                        <a href="" class="cs-social-link">
+                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                        </a>
+                        <a href="" class="cs-social-link">
+                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                        </a>
+                        <a href="" class="cs-social-link">
+                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="" class="cs-logo" aria-label="back to home">
+                    <img src="./img/1.png" alt="logo" width="197" height="43" decoding="async">
+                </a>
+                <!--Navigation List-->
+                <nav class="cs-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link cs-active">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    About
+                                </a>
+                            </li>
+                            <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <span class="cs-li-link">
+                                    Services
+                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                                <ul class="cs-drop-ul">
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Housing</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="" class="cs-li-link cs-drop-link">Food Banks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="#cs-footer-1763" class="cs-li-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="#cs-footer-1763" class="-nav cs-nav-button">Contact Us</a>
+                <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+                <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                    <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                    <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+                </button> -->
+            </div>
+        </header>
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+        <section id="hero-998">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Welcome to Sea Bites</span>
+                    <!--Logo-->
+                    <picture class="cs-logo">
+                        <img src="./img/Your paragraph text.png" alt="Stitch House Restaurant" width="614" height="166">
+                        </picture>
+                        <p class="cs-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <a href="#menu-1005" class="cs-button-solid-hero">Go to Menu</a>
+                </div>
+            </div>
+            <!--Background Image-->
+            <!--Image is also set as background image in CSS at 1400px for parallax effect-->
+            <picture class="cs-background">
+                <img decoding="async" src="./img/wave.png" alt="logo" width="1920">
+            </picture>
+        </section>     
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1832">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Our Story</h2>
+            </div>
+            <div class="cs-flex-group">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <img loading="lazy" decoding="async" src="./img/DALL·E 2024-05-20 18.18.10 - A profile picture of a fictional human character. The character has a neutral expression, medium-length hair, and is wearing casual clothing. The back.webp" alt="person" width="570" height="680">
+                    </picture>
+
+                    <!--White SVG Mask. Download the image and change the fill color to match the color of the section background below it-->
+                    <img class="cs-mask cs-light" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-paint-stroke.svg" alt="white splatter" width="700" height="666">
+                    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+                    <img class="cs-mask cs-dark" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-paint-stroke.svg" alt="white splatter" width="700" height="666">
+                </div>
+                <div class="cs-review-group">
+                    <p class="cs-review-text">
+                        Welcome to Seaside Delights, your neighborhood go-to for
+                        scrumptious fish and chips! Nestled in the heart of the
+                        community, our restaurant serves up a delicious array of
+                        golden, crisply battered fish accompanied by perfectly fried
+                        chips that promise a delightful crunch with every bite. Our
+                        cozy, maritime-themed decor provides a warm, welcoming
+                        atmosphere where family and friends can gather to enjoy
+                        hearty, flavorsome meals. At Seaside Delights, we're
+                        dedicated to bringing you the freshest seafood and a
+                        memorable dining experience with every visit. Come in and
+                        taste the tradition!
+                    </p>
+                    <span class="cs-name">Chief Chef</span>
+                    <span class="cs-job">Founder of Sea Bites</span>
+                    <!--Quote-->
+                    <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-quote.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                </div>
+            </div>
+        </div>
+        <!--Texture Graphic-->
+        <picture class="cs-background">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+                .path-0{
+                  animation:pathAnim-0 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-0{
+                  0%{
+                    d: path("M 0,400 L 0,150 C 55.35047186021309,130.2647043273679 110.70094372042618,110.52940865473579 163,123 C 215.29905627957382,135.4705913452642 264.54669697850846,180.14706970842474 313,178 C 361.45330302149154,175.85293029157526 409.11226836553976,126.88231251156523 454,133 C 498.88773163446024,139.11768748843477 541.0042295593327,200.32368024531445 581,200 C 620.9957704406673,199.67631975468555 658.8708133971293,137.82296650717703 700,109 C 741.1291866028707,80.17703349282297 785.5125168521504,84.38445372597741 845,119 C 904.4874831478496,153.6155462740226 979.0791191942692,218.63921858891325 1027,209 C 1074.9208808057308,199.36078141108675 1096.1710063707737,115.05867191836951 1136,115 C 1175.8289936292263,114.94132808163049 1234.2368553226363,199.1260937376087 1288,219 C 1341.7631446773637,238.8739062623913 1390.881572338682,194.43695313119565 1440,150 L 1440,400 L 0,400 Z");
+                  }
+                  25%{
+                    d: path("M 0,400 L 0,150 C 50.469573607549776,155.0260514420154 100.93914721509955,160.05210288403077 153,162 C 205.06085278490045,163.94789711596923 258.7129847471516,162.81763990589232 307,175 C 355.2870152528484,187.18236009410768 398.20891379629387,212.6773374924 436,214 C 473.79108620370613,215.3226625076 506.4513600676729,192.47301012450765 559,165 C 611.5486399323271,137.52698987549235 683.9856459330144,105.43062200956938 739,112 C 794.0143540669856,118.56937799043062 831.6060562002694,163.80450183721481 874,173 C 916.3939437997306,182.19549816278519 963.5901292659073,155.35137064157126 1019,149 C 1074.4098707340927,142.64862935842874 1138.0334267361018,156.79001559650004 1178,146 C 1217.9665732638982,135.20998440349996 1234.2761637896854,99.48856697242857 1274,96 C 1313.7238362103146,92.51143302757143 1376.8619181051572,121.25571651378571 1440,150 L 1440,400 L 0,400 Z");
+                  }
+                  50%{
+                    d: path("M 0,400 L 0,150 C 42.352256205556586,183.99604800549844 84.70451241111317,217.99209601099685 127,197 C 169.29548758888683,176.00790398900315 211.53420656110393,100.02766396151102 267,112 C 322.46579343889607,123.97233603848898 391.1586613444711,223.89724814295909 440,221 C 488.8413386555289,218.10275185704091 517.8311480610113,112.38334346665258 561,89 C 604.1688519389887,65.61665653334742 661.5167464114834,124.56937799043061 715,142 C 768.4832535885166,159.4306220095694 818.1018662930553,135.33914457162496 863,127 C 907.8981337069447,118.66085542837506 948.0757884162947,126.0740437230696 999,141 C 1049.9242115837053,155.9259562769304 1111.5949800417668,178.36468053609664 1164,171 C 1216.4050199582332,163.63531946390336 1259.544291416638,126.46723413254382 1304,118 C 1348.455708583362,109.53276586745618 1394.227854291681,129.7663829337281 1440,150 L 1440,400 L 0,400 Z");
+                  }
+                  75%{
+                    d: path("M 0,400 L 0,150 C 58.71466335351185,180.8071320944249 117.4293267070237,211.61426418884983 170,209 C 222.5706732929763,206.38573581115017 268.99735652541705,170.35007533902564 308,149 C 347.00264347458295,127.64992466097436 378.5812471913083,120.9854344550477 417,120 C 455.4187528086917,119.0145655449523 500.67765470935,123.70818684078353 559,138 C 617.32234529065,152.29181315921647 688.7081339712919,176.18181818181816 738,165 C 787.2918660287081,153.81818181818184 814.4898094054826,107.56454043194374 860,88 C 905.5101905945174,68.43545956805626 969.332628406778,75.56002009040685 1022,93 C 1074.667371593222,110.43997990959315 1116.1796769674058,138.19537920642895 1155,146 C 1193.8203230325942,153.80462079357105 1229.9486637235984,141.65846308387745 1277,139 C 1324.0513362764016,136.34153691612255 1382.0256681382007,143.17076845806127 1440,150 L 1440,400 L 0,400 Z");
+                  }
+                  100%{
+                    d: path("M 0,400 L 0,150 C 55.35047186021309,130.2647043273679 110.70094372042618,110.52940865473579 163,123 C 215.29905627957382,135.4705913452642 264.54669697850846,180.14706970842474 313,178 C 361.45330302149154,175.85293029157526 409.11226836553976,126.88231251156523 454,133 C 498.88773163446024,139.11768748843477 541.0042295593327,200.32368024531445 581,200 C 620.9957704406673,199.67631975468555 658.8708133971293,137.82296650717703 700,109 C 741.1291866028707,80.17703349282297 785.5125168521504,84.38445372597741 845,119 C 904.4874831478496,153.6155462740226 979.0791191942692,218.63921858891325 1027,209 C 1074.9208808057308,199.36078141108675 1096.1710063707737,115.05867191836951 1136,115 C 1175.8289936292263,114.94132808163049 1234.2368553226363,199.1260937376087 1288,219 C 1341.7631446773637,238.8739062623913 1390.881572338682,194.43695313119565 1440,150 L 1440,400 L 0,400 Z");
+                  }
+                }</style><path d="M 0,400 L 0,150 C 55.35047186021309,130.2647043273679 110.70094372042618,110.52940865473579 163,123 C 215.29905627957382,135.4705913452642 264.54669697850846,180.14706970842474 313,178 C 361.45330302149154,175.85293029157526 409.11226836553976,126.88231251156523 454,133 C 498.88773163446024,139.11768748843477 541.0042295593327,200.32368024531445 581,200 C 620.9957704406673,199.67631975468555 658.8708133971293,137.82296650717703 700,109 C 741.1291866028707,80.17703349282297 785.5125168521504,84.38445372597741 845,119 C 904.4874831478496,153.6155462740226 979.0791191942692,218.63921858891325 1027,209 C 1074.9208808057308,199.36078141108675 1096.1710063707737,115.05867191836951 1136,115 C 1175.8289936292263,114.94132808163049 1234.2368553226363,199.1260937376087 1288,219 C 1341.7631446773637,238.8739062623913 1390.881572338682,194.43695313119565 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#8ed1fc" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+            </picture>
+    </section>
+                                    
+
+    <!-- ============================================ -->
+    <!--                    Menu                      -->
+    <!-- ============================================ -->
+
+    <section id="menu-1005">
+        <div class="cs-container">
+            <div class="cs-content">
+                <picture class="cs-wrapper" aria-hidden="true">
+                    <img class="cs-decal" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/decal1.svg" decoding="async" alt="decal" width="181" height="36">
+                </picture>
+                <h2 class="cs-title">Our Menu</h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </div>
+
+            <div class='tabs_animate'>
+                <ul class='horizontal'>
+                <li id="tabswitcher1"><a href="#tab-1">information</a></li>
+                <li id="tabswitcher2"><a href="#tab-2">tab</a></li>
+                <li id="tabswitcher3"><a href="#tab-3">tab</a></li>
+                </ul>
+                <div class="tabcontent">
+                    <div id='tab-1'><span>Change the tab to see that there is an animation.</span></div>
+                    <div id='tab-2'><span>Tab 2</span></div>
+                    <div id='tab-3'><span>Tab 3</span></div>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture"  aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        </picture>
+                        <div class="cs-info">
+                        <h3 class="cs-h3">
+                            <span class="cs-name">SWEET POTATO</span>
+                            <span class="cs-price">
+                                $8
+                            </span>
+                        </h3>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture"  aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        </picture>
+                        <div class="cs-info">
+                        <h3 class="cs-h3">
+                            <span class="cs-name">CALAMARI RINGS</span>
+                            <span class="cs-price">
+                                $10
+                            </span>
+                        </h3>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture"  aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        </picture>
+                        <div class="cs-info">
+                        <h3 class="cs-h3">
+                            <span class="cs-name">ONION RINGS</span>
+                            <span class="cs-price">
+                                $12
+                            </span>
+                        </h3>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture"  aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        </picture>
+                        <div class="cs-info">
+                        <h3 class="cs-h3">
+                            <span class="cs-name">SALAD</span>
+                            <span class="cs-price">
+                                $9
+                            </span>
+                        </h3>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture"  aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        </picture>
+                        <div class="cs-info">
+                        <h3 class="cs-h3">
+                            <span class="cs-name">CHIPS</span>
+                            <span class="cs-price">
+                                $6
+                            </span>
+                        </h3>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture"  aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        </picture>
+                        <div class="cs-info">
+                        <h3 class="cs-h3">
+                            <span class="cs-name">NUGGETS</span>
+                            <span class="cs-price">
+                                $7
+                            </span>
+                        </h3>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        </div>
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid-menu">Reserve Your Table</a>
+        </div>
+        <!--Static background is in CSS as a tiled pattern-->
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1672">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Our Customer Reviews</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Britney Allison
+                            <span class="cs-job">Founder of Yokoloko</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">
+                        Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                        </p>
+                    </div>
+                    <!--Quote Icon-->
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review2.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Brooklyn Simmons
+                            <span class="cs-job">Founder of Yokoloko</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">
+                        Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                        </p>
+                    </div>
+                    <!--Quote Icon-->
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        </picture>
+                        <span class="cs-name">
+                            Cameron Williamson
+                            <span class="cs-job">Founder of Yokoloko</span>
+                        </span>
+                    </div>
+                    <div class="wrapper">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                        <p class="cs-review">
+                        Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                        </p>
+                    </div>
+                    <!--Quote Icon-->
+                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+    <footer id="cs-footer-1763">
+        <!--Contact Info-->
+        <div class="cs-card-group">
+            <div class="cs-card">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Location</h3>
+                    <span class="cs-card-info">47 Atkinson Street Chadstone 3148</span>
+                </div>
+            </div>
+            <div class="cs-card">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Working Hours</h3>
+                    <span class="cs-card-info">Monday - Saturday: 11:00 - 20:00 </span>
+                    <span class="cs-card-info">Sunday: 16:00 - 20:30</span>
+                </div>
+            </div>
+            <div class="cs-card">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+                </picture>
+                <div class="cs-flex">
+                    <h3 class="cs-h3">Contact</h3>
+                    <a href="" class="cs-card-info">M: 03 9069 3148</a>
+                    <a href="" class="cs-card-info">E: seabites@gmail.com</a>
+                </div>
+            </div>
+            <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+            <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+        </div>
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="./img/1.png" alt="logo" width="240" height="32">
+                </a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.853831744499!2d145.09264237695805!3d-37.887100871957294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66bafdaa2802d%3A0x8513889b11dd8929!2sSea%20Bites%20Fish%20and%20Chips!5e0!3m2!1sen!2sau!4v1715949156803!5m2!1sen!2sau" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Links -->
+            <div class="cs-ul-wrapper">
+                <span class="cs-header">Our Services</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a class="cs-link" href="">Special Menu</a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="">SEA FOOD AND FISH DISHES</a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="">SANDWICH AND BURGER</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-ul-wrapper">
+                <span class="cs-header">Useful Links</span>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a class="cs-link" href="">About Sea Bites</a>
+                    </li>
+                    <li class="cs-li">
+                        <a class="cs-link" href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-contact">
+                <div class="cs-contact-info">
+                    <span class="cs-topper">Call us anytime</span>
+                    <a href="" class="cs-contact-link">03 9069 3148</a>
+                </div>
+                <div class="cs-contact-info">
+                    <span class="cs-topper">Visit our location</span>
+                    <a href="" class="cs-contact-link">47 Atkinson Street Chadstone 3148</a>
+                </div>
+            </div>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-credit">
+                © Copyright 2024 - <a href="" class="cs-credit-link" target="_blank">Sea Bites</a>
+            </span>
+            <div class="cs-bottom-links">
+                <a href="" class="cs-bottom-link">Terms & Conditions</a>
+                <a href="" class="cs-bottom-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+                                
+    <script src="./js/script.js"></script>                  
 </body>
 </html>

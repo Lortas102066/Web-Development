@@ -1,16 +1,16 @@
 function showMessage() {
     alert('Testing a Function');
-  }
+}
 
-  //showMessage();
+//showMessage();
 
-  document.querySelector('h1').addEventListener('click', showMessage);
+document.querySelector('h1').addEventListener('click', showMessage);
 
-  Fancybox.bind( "[data-fancybox]" );
+Fancybox.bind( "[data-fancybox]" );
 
-  $( 'button' ).click( filterItems );
+$( 'button' ).click( filterItems );
 
-  function filterItems() {
+function filterItems() {
     let button = this;
     let selector = $( button ).data( 'filter' );
     console.log( selector );
