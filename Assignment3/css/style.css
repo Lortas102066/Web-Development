@@ -943,7 +943,7 @@ body{
     /* 25px - 39px */
     font-size: 1.5rem;
     line-height: 1.2em;
-    text-align: inherit;
+    text-align: center;
     margin: 0 0 2.5rem 0;
     color: var(--headerColor);
   }
@@ -1211,6 +1211,7 @@ body{
   }
   #menu-1005 .cs-item {
       list-style: none;
+      border-radius: 10px;
       width: 100%;
       max-width: 36.25rem;
       margin: 0;
@@ -1284,6 +1285,7 @@ body{
       display: flex;
       align-items: center;
       order: 3;
+      margin-right: 10px;
   }
   #menu-1005 .cs-item-p {
       /* 14px - 16px */
@@ -1306,6 +1308,50 @@ body{
   #menu-1005 .cs-item {
       width: 48.5%;
   }
+}
+
+.tabs_animate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs_animate ul {
+  list-style: none outside none;
+}
+
+.tabs_animate li {
+  background: white;
+  border-bottom: 4px solid #E5E5E5;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.tabs_animate a {
+    color: #ccc;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+.tabs_animate  LI:hover {
+	background: #a0cac0;
+	border-bottom: 4px solid #68a697;
+}
+
+.tabs_animate LI:hover A {
+	color: rgb(255, 255, 255);
+}
+
+.horizontal .active {
+  background-color: #a0cac0;
+  color: white;  
+}
+
+.a1 .active {
+  color: #fff;
 }
 
 /*-- -------------------------- -->
@@ -1723,31 +1769,3 @@ body{
 }
 
 
-.tabs_animate ul {
-  list-style: none outside none;
-}
-
-.tabs_animate li {
-  background: white;
-  border-bottom: 4px solid #E5E5E5;
-  margin: 0 10px 0 0;
-  display: inline-block;
-}
-
-.tabs_animate a {
-    color: #ccc;
-    display: block;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 14px 24px;
-    text-decoration: none;
-}
-
-.tabs_animate  LI:hover {
-	background: #a0cac0;
-	border-bottom: 4px solid #68a697;
-}
-
-.tabs_animate LI:hover A {
-	color: white;
-}

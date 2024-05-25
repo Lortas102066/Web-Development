@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Assignment 3</title>
+    <title>Sea Bites</title>
     <link href="./css/style.css" type="text/css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
  
 </head>
 <body>
@@ -19,23 +20,23 @@
                 <div class="cs-top-container">
                     <div class="cs-top-contact">
                         <a href="" class="cs-top-link">
-                            <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                            <img class="cs-link-icon" src="./img/phone_black.svg" alt="phone" width="32" height="32" aria-hidden="true" decoding="async">
                             Call us: 03 9069 3148
                         </a>
                         <a href="" class="cs-top-link">
-                            <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
+                            <img class="cs-link-icon" src="./img/time_black.svg" alt="time" width="20" height="20" aria-hidden="true" decoding="async">
                             Opening hours: Mon - Sat: 11:00 To 20:00 &emsp; Sun: 16:00 To 20:30
                         </a>
                     </div>
                     <div class="cs-top-social">
                         <a href="" class="cs-social-link">
-                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                            <img class="cs-social-icon" src="./img/facebook-176-svgrepo-com.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                         </a>
                         <a href="" class="cs-social-link">
-                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                            <img class="cs-social-icon" src="./img/twitter-svgrepo-com.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                         </a>
                         <a href="" class="cs-social-link">
-                            <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                            <img class="cs-social-icon" src="./img/instagram-svgrepo-com.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                         </a>
                     </div>
                 </div>
@@ -64,7 +65,7 @@
                                 </a>
                             </li>
                             <li class="cs-li">
-                                <a href="" class="cs-li-link">
+                                <a href="#reviews-1832" class="cs-li-link">
                                     About
                                 </a>
                             </li>
@@ -76,7 +77,7 @@
                                 </span>
                                 <ul class="cs-drop-ul">
                                     <li class="cs-drop-li">
-                                        <a href="" class="cs-li-link cs-drop-link">Housing</a>
+                                        <a href="#menu-1005" class="cs-li-link cs-drop-link">Menu</a>
                                     </li>
                                     <li class="cs-drop-li">
                                         <a href="" class="cs-li-link cs-drop-link">Food Banks</a>
@@ -151,19 +152,13 @@
                     <img class="cs-mask cs-dark" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-paint-stroke.svg" alt="white splatter" width="700" height="666">
                 </div>
                 <div class="cs-review-group">
-                    <p class="cs-review-text">
-                        Welcome to Seaside Delights, your neighborhood go-to for
-                        scrumptious fish and chips! Nestled in the heart of the
-                        community, our restaurant serves up a delicious array of
-                        golden, crisply battered fish accompanied by perfectly fried
-                        chips that promise a delightful crunch with every bite. Our
-                        cozy, maritime-themed decor provides a warm, welcoming
-                        atmosphere where family and friends can gather to enjoy
-                        hearty, flavorsome meals. At Seaside Delights, we're
-                        dedicated to bringing you the freshest seafood and a
-                        memorable dining experience with every visit. Come in and
-                        taste the tradition!
-                    </p>
+                    <div class="autotext">
+                        <p class="cs-review-text">
+                            <span id="element">
+
+                            </span>
+                        </p>
+                    </div>
                     <span class="cs-name">Chief Chef</span>
                     <span class="cs-job">Founder of Sea Bites</span>
                     <!--Quote-->
@@ -218,126 +213,121 @@
 
             <div class='tabs_animate'>
                 <ul class='horizontal'>
-                <li id="tabswitcher1"><a href="#tab-1">information</a></li>
-                <li id="tabswitcher2"><a href="#tab-2">tab</a></li>
-                <li id="tabswitcher3"><a href="#tab-3">tab</a></li>
+                <li id="tabswitcher1"><a class="a1" href="#tab-1">Fish Foods</a></li>
+                <li id="tabswitcher2"><a class="a2" href="#tab-2">packed Foods</a></li>
+                <li id="tabswitcher3"><a class="a3" href="#tab-3">SIDES</a></li>
                 </ul>
                 <div class="tabcontent">
-                    <div id='tab-1'><span>Change the tab to see that there is an animation.</span></div>
-                    <div id='tab-2'><span>Tab 2</span></div>
-                    <div id='tab-3'><span>Tab 3</span></div>
+                    <div id='tab-1'>
+                        <ul class="cs-card-group">
+                            <li class="cs-item">
+                                <picture class="cs-picture"  aria-hidden="true">
+                                    <img loading="lazy" decoding="async" src="./img/prawn.jpeg" alt="prawn" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
+                                        <h3 class="cs-h3">
+                                            <span class="cs-name">Prawn</span>
+                                            <span class="cs-price">
+                                                $8
+                                            </span>
+                                        </h3>
+                                        <p class="cs-item-p">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                        </p>
+                                    </div>
+                            </li>
+                            <li class="cs-item">
+                                <picture class="cs-picture"  aria-hidden="true">
+                                    <img loading="lazy" decoding="async" src="./img/salmon.jpeg" alt="salmon" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
+                                    <h3 class="cs-h3">
+                                        <span class="cs-name">Salmon</span>
+                                        <span class="cs-price">
+                                            $10
+                                        </span>
+                                    </h3>
+                                    <p class="cs-item-p">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id='tab-2'>
+                        <ul class="cs-card-group">
+                            <li class="cs-item">
+                                <picture class="cs-picture"  aria-hidden="true">
+                                    <img loading="lazy" decoding="async" src="./img/hamburger_pack.webp" alt="hamburger" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
+                                    <h3 class="cs-h3">
+                                        <span class="cs-name">Hamburger Pack</span>
+                                        <span class="cs-price">
+                                            $12
+                                        </span>
+                                    </h3>
+                                    <p class="cs-item-p">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                    </div>
+                            </li>
+                            <li class="cs-item">
+                                <picture class="cs-picture"  aria-hidden="true">
+                                    <img loading="lazy" decoding="async" src="./img/grilled_fish_pack.jpeg" alt="food" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
+                                    <h3 class="cs-h3">
+                                        <span class="cs-name">Grilled Fish Pack</span>
+                                        <span class="cs-price">
+                                            $9
+                                        </span>
+                                    </h3>
+                                    <p class="cs-item-p">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id='tab-3'>
+                        <ul class="cs-card-group">
+                            <li class="cs-item">
+                                <picture class="cs-picture"  aria-hidden="true">
+                                    <img loading="lazy" decoding="async" src="/img/chips.webp" alt="food" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
+                                    <h3 class="cs-h3">
+                                        <span class="cs-name">CHIPS</span>
+                                        <span class="cs-price">
+                                            $6
+                                        </span>
+                                    </h3>
+                                    <p class="cs-item-p">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                    </div>
+                            </li>
+                            <li class="cs-item">
+                                <picture class="cs-picture"  aria-hidden="true">
+                                    <img loading="lazy" decoding="async" src="./img/nuggets.jpeg" alt="food" width="160" height="160">
+                                    </picture>
+                                    <div class="cs-info">
+                                    <h3 class="cs-h3">
+                                        <span class="cs-name">NUGGETS</span>
+                                        <span class="cs-price">
+                                            $7
+                                        </span>
+                                    </h3>
+                                    <p class="cs-item-p">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                        </picture>
-                        <div class="cs-info">
-                        <h3 class="cs-h3">
-                            <span class="cs-name">SWEET POTATO</span>
-                            <span class="cs-price">
-                                $8
-                            </span>
-                        </h3>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                        </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                        </picture>
-                        <div class="cs-info">
-                        <h3 class="cs-h3">
-                            <span class="cs-name">CALAMARI RINGS</span>
-                            <span class="cs-price">
-                                $10
-                            </span>
-                        </h3>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                        </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                        </picture>
-                        <div class="cs-info">
-                        <h3 class="cs-h3">
-                            <span class="cs-name">ONION RINGS</span>
-                            <span class="cs-price">
-                                $12
-                            </span>
-                        </h3>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                        </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                        </picture>
-                        <div class="cs-info">
-                        <h3 class="cs-h3">
-                            <span class="cs-name">SALAD</span>
-                            <span class="cs-price">
-                                $9
-                            </span>
-                        </h3>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                        </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                        </picture>
-                        <div class="cs-info">
-                        <h3 class="cs-h3">
-                            <span class="cs-name">CHIPS</span>
-                            <span class="cs-price">
-                                $6
-                            </span>
-                        </h3>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                        </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
-                        </picture>
-                        <div class="cs-info">
-                        <h3 class="cs-h3">
-                            <span class="cs-name">NUGGETS</span>
-                            <span class="cs-price">
-                                $7
-                            </span>
-                        </h3>
-                        <p class="cs-item-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                        </div>
-                </li>
-            </ul>
             <a href="" class="cs-button-solid-menu">Reserve Your Table</a>
         </div>
         <!--Static background is in CSS as a tiled pattern-->
@@ -356,7 +346,7 @@
                 <li class="cs-item">
                     <div class="cs-flex-group">
                         <picture class="cs-picture">
-                            <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                            <img class="cs-profile" src="./img/DALL·E 2024-05-25 19.18.05 - Create a portrait image of a young Caucasian male with a full beard, wearing an orange t-shirt. The portrait should have a smiling expression. The bac.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                         </picture>
                         <span class="cs-name">
                             Britney Allison
@@ -375,7 +365,7 @@
                 <li class="cs-item">
                     <div class="cs-flex-group">
                         <picture class="cs-picture">
-                            <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review2.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                            <img class="cs-profile" src="img/DALL·E 2024-05-25 19.26.54 - Create a portrait image of a young Caucasian female with long brown hair, wearing an orange t-shirt. The portrait should have a smiling expression. Th.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                         </picture>
                         <span class="cs-name">
                             Brooklyn Simmons
@@ -394,7 +384,7 @@
                 <li class="cs-item">
                     <div class="cs-flex-group">
                         <picture class="cs-picture">
-                            <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                            <img class="cs-profile" src="img/DALL·E 2024-05-25 19.43.22 - Create a portrait image of a young Caucasian male with short brown hair styled neatly, wearing an orange t-shirt. The portrait should have a gentle an.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                         </picture>
                         <span class="cs-name">
                             Cameron Williamson
@@ -413,7 +403,6 @@
             </ul>
         </div>
     </section>
-
 
     <!-- ============================================ -->
     <!--                   Footer                     -->
@@ -435,7 +424,7 @@
             </div>
             <div class="cs-card">
                 <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+                    <img class="cs-icon" src="./img/time-svgrepo-com.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
                 </picture>
                 <div class="cs-flex">
                     <h3 class="cs-h3">Working Hours</h3>
@@ -445,7 +434,7 @@
             </div>
             <div class="cs-card">
                 <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+                    <img class="cs-icon" src="./img/phone-svgrepo-com.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
                 </picture>
                 <div class="cs-flex">
                     <h3 class="cs-h3">Contact</h3>
@@ -511,7 +500,8 @@
             </div>
         </div>
     </footer>
-                                
+    
+    <script src="./js/typed.js"></script>
     <script src="./js/script.js"></script>                  
 </body>
 </html>
