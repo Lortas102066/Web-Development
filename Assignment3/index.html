@@ -6,6 +6,8 @@
 
     <title>Sea Bites</title>
     <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -342,66 +344,106 @@
             <div class="cs-content">
                 <h2 class="cs-title">Our Customer Reviews</h2>
             </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <picture class="cs-picture">
-                            <img class="cs-profile" src="./img/DALL·E 2024-05-25 19.18.05 - Create a portrait image of a young Caucasian male with a full beard, wearing an orange t-shirt. The portrait should have a smiling expression. The bac.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
-                        </picture>
-                        <span class="cs-name">
-                            Britney Allison
-                            <span class="cs-job">Founder of Yokoloko</span>
-                        </span>
-                    </div>
-                    <div class="wrapper">
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
-                        <p class="cs-review">
-                        Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
-                        </p>
-                    </div>
-                    <!--Quote Icon-->
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
-                </li>
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <picture class="cs-picture">
-                            <img class="cs-profile" src="img/DALL·E 2024-05-25 19.26.54 - Create a portrait image of a young Caucasian female with long brown hair, wearing an orange t-shirt. The portrait should have a smiling expression. Th.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
-                        </picture>
-                        <span class="cs-name">
-                            Brooklyn Simmons
-                            <span class="cs-job">Founder of Yokoloko</span>
-                        </span>
-                    </div>
-                    <div class="wrapper">
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
-                        <p class="cs-review">
-                        Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
-                        </p>
-                    </div>
-                    <!--Quote Icon-->
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
-                </li>
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <picture class="cs-picture">
-                            <img class="cs-profile" src="img/DALL·E 2024-05-25 19.43.22 - Create a portrait image of a young Caucasian male with short brown hair styled neatly, wearing an orange t-shirt. The portrait should have a gentle an.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
-                        </picture>
-                        <span class="cs-name">
-                            Cameron Williamson
-                            <span class="cs-job">Founder of Yokoloko</span>
-                        </span>
-                    </div>
-                    <div class="wrapper">
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
-                        <p class="cs-review">
-                        Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
-                        </p>
-                    </div>
-                    <!--Quote Icon-->
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99">
-                </li>
-            </ul>
         </div>
+        <section class="container">
+            <div class="card__container swiper">
+               <div class="card__content">
+                  <div class="swiper-wrapper">
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="./img/DALL·E 2024-05-25 19.18.05 - Create a portrait image of a young Caucasian male with a full beard, wearing an orange t-shirt. The portrait should have a smiling expression. The bac.webp" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Kell Dawx</h3>
+                           <p class="card__description">
+                            Had a fantastic meal at Sea Bites last night! The fish was fresh and perfectly cooked. Definitely coming back!
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="./img/DALL·E 2024-05-25 19.26.54 - Create a portrait image of a young Caucasian female with long brown hair, wearing an orange t-shirt. The portrait should have a smiling expression. Th.webp" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Lotw Fox</h3>
+                           <p class="card__description">
+                                Great atmosphere and even better seafood. The grilled salmon was a highlight for me. Service was prompt and friendly.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="./img/DALL·E 2024-05-25 19.43.22 - Create a portrait image of a young Caucasian male with short brown hair styled neatly, wearing an orange t-shirt. The portrait should have a gentle an.webp" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Sara Mit</h3>
+                           <p class="card__description">
+                            Sea Bites never disappoints. Their fish tacos are the best I've ever had, and their tartar sauce is to die for!
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="./img/DALL·E 2024-05-26 01.05.07 - Create a portrait image of a young Caucasian female with long brown hair, wearing an orange t-shirt. The portrait should have a smiling expression. Th.webp" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Jenny Wert</h3>
+                           <p class="card__description">
+                            I visited Sea Bites on a friend's recommendation and was not let down. The seafood platter offers a great variety and everything tasted fresh.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+    
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="./img/DALL·E 2024-05-26 01.06.22 - Create a portrait image of a young Caucasian male with short brown hair, wearing an orange t-shirt. The portrait should have a neutral expression. The.webp" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Lexa Kin</h3>
+                           <p class="card__description">
+                            Loved the ambiance at Sea Bites. It's cozy and perfect for a date night. The shrimp cocktail was my favorite.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+    
+               <!-- Navigation buttons -->
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+               </div>
+               
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+               </div>
+    
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </section> 
     </section>
 
     <!-- ============================================ -->
@@ -501,6 +543,7 @@
         </div>
     </footer>
     
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="./js/typed.js"></script>
     <script src="./js/script.js"></script>                  
 </body>
